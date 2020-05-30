@@ -59,3 +59,33 @@ Recreating the below curve table:
         }
     }
 ```
+
+### Matrix III
+
+recreating snippets of [Matrix III - John whitney](https://www.youtube.com/watch?v=ZrKgyY5aDvA)
+
+
+
+| 01                                                 |      |
+| -------------------------------------------------- | ---- |
+| ![01](./Week2-JohnWhitney/Matrix-III/media/01.gif) |      |
+
+**01 code snippet**
+
+```c++
+for(int i=0; i< 24; i++)
+    {
+        float scale = ofMap(i, 0, 80, 0, 10);
+
+        float x = ofMap(sin(3 * (t*scale +i) + M_PI * 0.5),
+                        -1, 1,
+                        centerX - width/2, centerX + width/2);
+        float y = ofMap(sin(2 * (t*scale +i) ),
+                        -1, 1,
+                        centerY - height/2, centerY + height/2) ;
+  
+        ofSetLineWidth(2);
+        drawHexagon(x, y, ofMap(sin(t + i * 0.1), -1, 1, 20, 200));
+    }
+```
+
