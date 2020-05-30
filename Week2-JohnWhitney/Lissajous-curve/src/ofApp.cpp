@@ -1,16 +1,6 @@
 #include "ofApp.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
-    gui.setup();
-    
-    gui.add(a.setup("a", 0, 0 ,1));
-    gui.add(b.setup("b", 0, 0 ,1));
-    gui.add(d.setup("d", 0, 0 ,1));
-    
-}
-
-//--------------------------------------------------------------
 void ofApp::draw(){
     
     float t = ofGetElapsedTimef();
@@ -40,8 +30,6 @@ void ofApp::draw(){
             trail[trailIndex].draw();
         }
     }
-    
-    //    gui.draw();
     
 }
 
