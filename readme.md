@@ -22,6 +22,16 @@ Recreating the below curve table:
 
 ![curve-table](./Week2-JohnWhitney/Lissajous-curve/media/curve-table.gif)
 
+Equation: ![equation](./Week2-JohnWhitney/Lissajous-curve/media/equation.png)
+
+The table is changing two parameters **a** and **b**.
+
+Rows are increasing the **a** value from top to down. Range is [1,7]
+
+Columns are increasing the **b** value from left to right . Range is [1,7]
+
+
+
 | 01 - no grid                                            | 02 - wrong spacing at grid                              | 03 - worked!                                            |
 | ------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
 | ![01](./Week2-JohnWhitney/Lissajous-curve/media/01.gif) | ![02](./Week2-JohnWhitney/Lissajous-curve/media/02.gif) | ![03](./Week2-JohnWhitney/Lissajous-curve/media/03.gif) |
