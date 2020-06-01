@@ -44,7 +44,7 @@ void ofApp::draw(){
             drawSquareFour(unitCenterX*3, unitCenterY*3, distance * 1.5, variation, i);
     }
     
-    gui.draw();
+//    gui.draw();
 }
 
 //--------------------------------------------------------------

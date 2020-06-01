@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<group>
+	<noiseRate>0.01</noiseRate>
+	<distance>9</distance>
+	<cornerOffset>9</cornerOffset>
+	<seed>0</seed>
+</group>

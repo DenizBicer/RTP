@@ -1,6 +1,34 @@
 ## Week 1 - Vera Molnar 
 
+### Carrés en 2 positions 
 
+![01](./Week1-Vera Molnar/Carrés en 2 positions /media/01.gif)
+
+### Computer-rosace-series
+
+![01](./Week1-Vera Molnar/Computer-rosace-series/media/01.png)
+
+### de la serie 100 carres
+
+![01](./Week1-Vera Molnar/de la serie 100 carres/media/01.png)
+
+
+
+### du cycle inclinaisions
+
+![01](./Week1-Vera Molnar/du cycle inclinaisions/media/01.png)
+
+
+
+### Horizontales
+
+![01](./Week1-Vera Molnar/Horizontales/media/01.gif)
+
+
+
+### Sainte-Victoire On Line
+
+![01](./Week1-Vera Molnar/Sainte-Victoire On Line/media/01.gif)
 
 ## Week 2 - John Whitney
 
