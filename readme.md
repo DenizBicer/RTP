@@ -104,9 +104,12 @@ recreating snippets of [Matrix III - John whitney](https://www.youtube.com/watch
 
 
 
-| 01                                                 |      |
-| -------------------------------------------------- | ---- |
-| ![01](./Week2-JohnWhitney/Matrix-III/media/01.gif) |      |
+| 01                                                 | 02                                                           | 03                                                           |
+| -------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![01](./Week2-JohnWhitney/Matrix-III/media/01.gif) | ![02](./Week2-JohnWhitney/Matrix-III/media/02.gif)           | ![03](./Week2-JohnWhitney/Matrix-III/media/03.gif)           |
+|                                                    | removing the **i** from equation made them align too much. Also they should have collapsed in the middle but because of `+ M_PI * 0.5`  it collapsed on the side. | This version is closer to the original but they align to a lign before collapsing instead of coming from all sides. |
+
+
 
 **01 code snippet**
 

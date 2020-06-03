@@ -3,7 +3,6 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0);
-    
 }
 
 void drawHexagon(float centerX, float centerY, float r)
@@ -18,9 +17,65 @@ void drawHexagon(float centerX, float centerY, float r)
     line.draw();
 }
 
+float ofApp::getScale(int seed)
+{
+    float s = ofMap(seed, 0, 24, 0, 0.5);
+    if(!goToCenter)
+        return s;
+    
+    float t = ofGetElapsedTimef();
+    float duration = t - centerStartTime;
+    if(duration > centerLapseDuration)
+        return 0;
+    
+    return ofLerp(s, 0, duration / centerLapseDuration);
+}
+
+float ofApp::getPhase(int seed)
+{
+    float p = ofMap(seed, 0, 24, 0, 0.5);
+    if(!goToCenter)
+        return p;
+    
+    float t = ofGetElapsedTimef();
+    float duration = t - centerStartTime;
+    if(duration > centerLapseDuration)
+        return 0;
+    
+    return ofLerp(p, 0, duration /centerLapseDuration);
+}
+
+float ofApp::getVariety(int seed)
+{
+    if(!goToCenter)
+        return seed;
+   
+    float t = ofGetElapsedTimef();
+    float duration = t - centerStartTime;
+    if(duration > centerLapseDuration)
+          return 0;
+      
+    return ofLerp(seed, 0, duration /centerLapseDuration);
+}
+
+float ofApp::getCenterOffset()
+{
+    if(!goToCenter)
+    return M_PI * 0.5;
+    
+    
+    float t = ofGetElapsedTimef();
+    float duration = t - centerStartTime;
+    if(duration > centerLapseDuration)
+          return 0;
+      
+    return ofLerp(M_PI * 0.5, 0, duration / centerLapseDuration);
+}
+
 //--------------------------------------------------------------
 void ofApp::draw(){
-    float t = ofGetElapsedTimef();
+    t += ofMap(sin(t), -1, 1, 0.01, 0.05);
+    
     int screenWidth = ofGetWidth();
     int screenHeight = ofGetHeight();
     
@@ -32,16 +87,19 @@ void ofApp::draw(){
     ofSeedRandom(0);
     for(int i=0; i< 24; i++)
     {
-        float scale = ofMap(i, 0, 24, 0, 0.5);
-        float phase = ofMap(i, 0, 24, 0, 2);
+        float scale = getScale(i);
+        float phase = getPhase(i);
+        float variety = getVariety(i);
         
-        float x = ofMap(sin(3 * (t*scale +i + phase) + M_PI * 0.5), -1, 1, centerX - width/2, centerX + width/2);
-        float y = ofMap(sin(2 * (t*scale +i + phase) ), -1, 1, centerY - height/2, centerY + height/2) ;
+        float centerOffset = getCenterOffset();
+        
+        float x = ofMap(sin(3 * (t*scale + variety + phase) +centerOffset), -1, 1, centerX - width/2, centerX + width/2);
+        float y = ofMap(sin(2 * (t*scale + variety + phase) ), -1, 1, centerY - height/2, centerY + height/2) ;
+   
         
         if(t<10)
             ofDrawCircle(x, y, 5);
-        else{
-            //00:40 sec. pale pink
+        else {
             float interpolate = ofClamp(t, 10, 20);
             float minSize = ofMap(interpolate, 10, 20, 1, 5);
             float maxSize = ofMap(interpolate, 10, 20, 5, 200);
@@ -62,11 +120,16 @@ void ofApp::draw(){
             ofSetLineWidth(2);
             drawHexagon(x, y, ofMap(sin(t + i * 0.1), -1, 1, minSize, maxSize));
             
+            if(!goToCenter)
+            {
+                goToCenter = true;
+                centerStartTime = ofGetElapsedTimef();
+            }
             
-            //2:40 red
-            //after 30 sec back to pink
         }
         
+        ofSetColor(255);
+        ofDrawBitmapString(to_string(t), 20,20);
     }
     
     
