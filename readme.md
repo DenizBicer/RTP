@@ -130,3 +130,49 @@ for(int i=0; i< 24; i++)
     }
 ```
 
+### Catalog
+
+recreating snippets of [Catalog](https://youtu.be/TbV7loKp69s?t=225)
+
+**Creating the basic shape**
+
+I studied the fan like shape using Figma. 
+
+| ![study1](./Week2-JohnWhitney/Catalog/media/study1.png)      | ![study2](./Week2-JohnWhitney/Catalog/media/study2.png)      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| I first placed circles to create the shape as an intersection | Then found the origin points and the angles to recreate the arcs using ofPath |
+
+```c++
+    ofPath path;
+		path.arcNegative(420-290,296-120, 200, 200, 257, 198);
+    path.arc        (430-290,233-120, 200, 200, 180, 243);
+    path.arc        (200-290,200-120, 200, 200, 314, 332);
+    path.close();
+    path.setCircleResolution(120);
+    path.setPolyWindingMode((ofPolyWindingMode) 2);
+    
+```
+
+above code snippet renders the following shape
+
+![shape](./Week2-JohnWhitney/Catalog/media/shape.png)
+
+Code details:
+
+- in order to move the shape origin to the middle every center point is offsetted by **(290,120)**. 
+- **arc** draws the path in *clockwise* and **arcNegative** in *counter-clockwise*
+- whole shape is drawn in *clockwise* 
+- Tried different **PolyWindingMode**s and decided on using *OF_POLY_WINDING_POSITIVE* (2) which closed the path without artefacts.
+
+**Iterations**
+
+| 01                                                           | 02                                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![01](./Week2-JohnWhitney/Catalog/media/01.png)              | ![02](./Week2-JohnWhitney/Catalog/media/02.gif)              |
+| The position of the arcs are correct but couldn't figure out the rotation yet. The pivot was not set properly for rotation. | The **mouseX** position is used to change the size of the shape. |
+
+**02**
+
+- used  ` ofEnableBlendMode(OF_BLENDMODE_ADD)` to make the overlapping regions emit more light
+- used a **fragment shader** to color parts of the ofPath 
+

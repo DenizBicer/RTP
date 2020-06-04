@@ -3,11 +3,12 @@
 #include "ofMain.h"
 
 class ofApp : public ofBaseApp{
-
-	public:
-		void setup();
-		void draw();
+    
+public:
+    void setup();
+    void draw();
     
     ofPath path;
     int mode = 2;
+    ofShader shader;
 };
