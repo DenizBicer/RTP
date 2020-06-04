@@ -1,3 +1,20 @@
+#### Table of Contents
+
+- [Week 1 - Vera Molnar](#week-1---vera-molnar)
+  - [Carrés en 2 positions](#carrés-en-2-positions)
+  - [Computer-rosace-series](#computer-rosace-series)
+  - [de la serie 100 carres](#de-la-serie-100-carres)
+  - [du cycle inclinaisions](#du-cycle-inclinaisions)
+  - [Horizontales](#horizontales)
+  - [Sainte-Victoire On Line](#sainte-victoire-on-line)
+- [Week 2 - John Whitney](#week-2---john-whitney)
+  - [Harmony](#harmony)
+  - [Lissajous-curve](#lissajous-curve)
+  - [Matrix III](#matrix-iii)
+  - [Catalog](#catalog)
+
+
+
 ## Week 1 - Vera Molnar 
 
 ### Carrés en 2 positions 
@@ -104,9 +121,9 @@ recreating snippets of [Matrix III - John whitney](https://www.youtube.com/watch
 
 
 
-| 01                                                 | 02                                                           | 03                                                           |
-| -------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![01](./Week2-JohnWhitney/Matrix-III/media/01.gif) | ![02](./Week2-JohnWhitney/Matrix-III/media/02.gif)           | ![03](./Week2-JohnWhitney/Matrix-III/media/03.gif)           |
+| 01                                                 | 02                                                                                                                                                                | 03                                                                                                                  |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| ![01](./Week2-JohnWhitney/Matrix-III/media/01.gif) | ![02](./Week2-JohnWhitney/Matrix-III/media/02.gif)                                                                                                                | ![03](./Week2-JohnWhitney/Matrix-III/media/03.gif)                                                                  |
 |                                                    | removing the **i** from equation made them align too much. Also they should have collapsed in the middle but because of `+ M_PI * 0.5`  it collapsed on the side. | This version is closer to the original but they align to a lign before collapsing instead of coming from all sides. |
 
 
@@ -138,8 +155,8 @@ recreating snippets of [Catalog](https://youtu.be/TbV7loKp69s?t=225)
 
 I studied the fan like shape using Figma. 
 
-| ![study1](./Week2-JohnWhitney/Catalog/media/study1.png)      | ![study2](./Week2-JohnWhitney/Catalog/media/study2.png)      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![study1](./Week2-JohnWhitney/Catalog/media/study1.png)       | ![study2](./Week2-JohnWhitney/Catalog/media/study2.png)                       |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | I first placed circles to create the shape as an intersection | Then found the origin points and the angles to recreate the arcs using ofPath |
 
 ```c++
@@ -166,9 +183,9 @@ Code details:
 
 **Iterations**
 
-| 01                                                           | 02                                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![01](./Week2-JohnWhitney/Catalog/media/01.png)              | ![02](./Week2-JohnWhitney/Catalog/media/02.gif)              |
+| 01                                                                                                                          | 02                                                               |
+| --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![01](./Week2-JohnWhitney/Catalog/media/01.png)                                                                             | ![02](./Week2-JohnWhitney/Catalog/media/02.gif)                  |
 | The position of the arcs are correct but couldn't figure out the rotation yet. The pivot was not set properly for rotation. | The **mouseX** position is used to change the size of the shape. |
 
 **02**
