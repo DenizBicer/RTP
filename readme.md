@@ -193,3 +193,34 @@ Code details:
 - used  ` ofEnableBlendMode(OF_BLENDMODE_ADD)` to make the overlapping regions emit more light
 - used a **fragment shader** to color parts of the ofPath 
 
+
+
+## Week 3
+
+### Morisawa
+
+#### Original Work
+
+![morisawa2](./Week3-MurielCooper-JohnMaeda/morisawa/media/morisawa2.jpg)
+
+
+
+Used the [FZGonta-kana](http://zone108.main.jp/font/fz-gonta-kana.html) font. Unzipping the font under MacOS was not trivial. 
+
+I found this command from [here](https://github.com/CocoaPods/CocoaPods/issues/7711) to unzip the font file that has japanese characters as a name:
+
+`$ ditto -V -x -k --sequesterRsrc --rsrc FILENAME.ZIP DESTINATIONDIRECTORY`
+
+
+
+[fix screenshot colors](https://forum.openframeworks.cc/t/ofimage-grabscreen-distorting-colours/34318/6): line 1917 of “ofGLRenderer.cpp”:
+
+`auto pixelFormat = OF_PIXELS_RGBA; `
+
+
+
+#### Reproduction
+
+![devImg2020-06-10-19-07-13-086](./Week3-MurielCooper-JohnMaeda/morisawa/bin/data/images/devImgs/devImg2020-06-10-19-07-13-086.jpg)
+
+Becuase of the difference at the font the reproduction looks darker.
