@@ -1,17 +1,22 @@
-#### Table of Contents
+## 
 
-- [Week 1 - Vera Molnar](#week-1---vera-molnar)
-  - [Carrés en 2 positions](#carrés-en-2-positions)
-  - [Computer-rosace-series](#computer-rosace-series)
-  - [de la serie 100 carres](#de-la-serie-100-carres)
-  - [du cycle inclinaisions](#du-cycle-inclinaisions)
-  - [Horizontales](#horizontales)
-  - [Sainte-Victoire On Line](#sainte-victoire-on-line)
-- [Week 2 - John Whitney](#week-2---john-whitney)
-  - [Harmony](#harmony)
-  - [Lissajous-curve](#lissajous-curve)
-  - [Matrix III](#matrix-iii)
-  - [Catalog](#catalog)
+Table of Contents
+=================
+
+* [Week 1 - Vera Molnar](#week-1---vera-molnar)
+     * [Carrés en 2 positions](#carrés-en-2-positions)
+     * [Computer-rosace-series](#computer-rosace-series)
+     * [de la serie 100 carres](#de-la-serie-100-carres)
+     * [du cycle inclinaisions](#du-cycle-inclinaisions)
+     * [Horizontales](#horizontales)
+     * [Sainte-Victoire On Line](#sainte-victoire-on-line)
+* [Week 2 - John Whitney](#week-2---john-whitney)
+   * [Harmony](#harmony)
+   * [Lissajous-curve](#lissajous-curve)
+   * [Matrix III](#matrix-iii)
+   * [Catalog](#catalog)
+* [Week 3](#week-3)
+   * [Morisawa](#morisawa)
 
 
 
@@ -199,7 +204,7 @@ Code details:
 
 ### Morisawa
 
-#### Original Work
+**Original Work**
 
 ![morisawa2](./Week3-MurielCooper-JohnMaeda/morisawa/media/morisawa2.jpg)
 
@@ -219,7 +224,7 @@ I found this command from [here](https://github.com/CocoaPods/CocoaPods/issues/7
 
 
 
-#### Reproduction
+**Reproduction**
 
 ![devImg2020-06-10-19-07-13-086](./Week3-MurielCooper-JohnMaeda/morisawa/bin/data/images/devImgs/devImg2020-06-10-19-07-13-086.jpg)
 
