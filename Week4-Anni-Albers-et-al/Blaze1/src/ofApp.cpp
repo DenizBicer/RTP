@@ -66,15 +66,16 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    
+
     int sampleCount = 360/sampleDegree  * -1;
-    
+    float t = ofGetElapsedTimef() * 0.5;
+
     for (int i=0; i < 5; i++)
     {
         for(int j =0; j< sampleCount; j++)
         {
             vector < ofPoint > points1 =  GenerateArrow(circles[i], circles[i+1], j, 0);
-            vector < ofPoint > points2  = GenerateArrow(circles[i], circles[i+1], j, 4);
+            vector < ofPoint > points2  = GenerateArrow(circles[i], circles[i+1], j, ofMap(ofNoise((i* j)*0.1+ t), 0, 1, 2,7));
             
             ofPath path;
             path.setFillColor(0);

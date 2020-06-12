@@ -247,3 +247,21 @@ Becuase of the difference at the font the reproduction looks darker.
 | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
 | ![iterations](./Week4-Anni-Albers-et-al/Blaze1/bin/data/iterations.gif) | ![noise](./Week4-Anni-Albers-et-al/Blaze1/bin/data/noise.gif) |
 
+
+
+**Experiments** 
+
+
+
+| Noise by sampled degree (thickness)                       | Noise by cicle (thickness)                                |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| ![e01](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e01.gif) | ![e02](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e02.gif) |
+
+|                                                           |                                                           |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| ![e03](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e03.gif) | ![e04](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e04.gif) |
+
+| noise on sample degree                                    | noise on sample degree with a smaller range               | noise on sample count                                     |
+| --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| ![e05](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e05.gif) | ![e06](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e06.gif) | ![eo7](./Week4-Anni-Albers-et-al/Blaze1/bin/data/eo7.gif) |
+
