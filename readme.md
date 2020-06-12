@@ -1,24 +1,21 @@
-## 
+## Table of Contents
 
-Table of Contents
-=================
-
-* [Week 1 - Vera Molnar](#week-1---vera-molnar)
+ * [Week 1 - Vera Molnar](#week-1---vera-molnar)
      * [Carrés en 2 positions](#carrés-en-2-positions)
      * [Computer-rosace-series](#computer-rosace-series)
      * [de la serie 100 carres](#de-la-serie-100-carres)
      * [du cycle inclinaisions](#du-cycle-inclinaisions)
      * [Horizontales](#horizontales)
      * [Sainte-Victoire On Line](#sainte-victoire-on-line)
-* [Week 2 - John Whitney](#week-2---john-whitney)
-   * [Harmony](#harmony)
-   * [Lissajous-curve](#lissajous-curve)
-   * [Matrix III](#matrix-iii)
-   * [Catalog](#catalog)
-* [Week 3](#week-3)
-   * [Morisawa](#morisawa)
-
-
+  * [Week 2 - John Whitney](#week-2---john-whitney)
+     * [Harmony](#harmony)
+     * [Lissajous-curve](#lissajous-curve)
+     * [Matrix III](#matrix-iii)
+     * [Catalog](#catalog)
+  * [Week 3](#week-3)
+     * [Morisawa](#morisawa)
+  * [Week4-Anni-Albers-et-al](#week4-anni-albers-et-al)
+     * [Blaze 1 - Bridget Riley](#blaze-1---bridget-riley)
 
 ## Week 1 - Vera Molnar 
 
@@ -229,3 +226,24 @@ I found this command from [here](https://github.com/CocoaPods/CocoaPods/issues/7
 ![devImg2020-06-10-19-07-13-086](./Week3-MurielCooper-JohnMaeda/morisawa/bin/data/images/devImgs/devImg2020-06-10-19-07-13-086.jpg)
 
 Becuase of the difference at the font the reproduction looks darker.
+
+## Week4-Anni-Albers-et-al
+
+### Blaze 1 - Bridget Riley
+
+| Original                                                            | Recreation                                                                                                                |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| ![original](./Week4-Anni-Albers-et-al/Blaze1/bin/data/original.jpg) | ![Blaze1Debug_2020-06-12-22-06-24-703](./Week4-Anni-Albers-et-al/Blaze1/bin/data/Blaze1Debug_2020-06-12-22-06-24-703.png) |
+
+
+
+**Shape Study**
+
+| Extracting the building blocks                          | seperating circles                                      | finding points to draw an arrow between circles         |
+| ------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
+| ![01](./Week4-Anni-Albers-et-al/Blaze1/bin/data/01.png) | ![02](./Week4-Anni-Albers-et-al/Blaze1/bin/data/02.png) | ![03](./Week4-Anni-Albers-et-al/Blaze1/bin/data/03.png) |
+
+| Iterations                                                              | Noise on circles                                              |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![iterations](./Week4-Anni-Albers-et-al/Blaze1/bin/data/iterations.gif) | ![noise](./Week4-Anni-Albers-et-al/Blaze1/bin/data/noise.gif) |
+
