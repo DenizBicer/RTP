@@ -239,3 +239,33 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
 | ![e05](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e05.gif) | ![e06](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e06.gif) | ![eo7](./Week4-Anni-Albers-et-al/Blaze1/bin/data/eo7.gif) |
 
+
+
+### Fragments 1 -Bridget Riley
+
+| Original                                                     | Recreation                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![original](./Week4-Anni-Albers-et-al/Fragment1/bin/data/original.png) | ![Fragment1Debug_2020-06-13-20-08-45-096](./Week4-Anni-Albers-et-al/Fragment1/bin/data/Fragment1Debug_2020-06-13-20-08-45-096.png) |
+
+**Shape Study**
+
+| Tracing dominating lines                                   | Breaking them down                                         | Iterations                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| ![01](./Week4-Anni-Albers-et-al/Fragment1/bin/data/01.png) | ![02](./Week4-Anni-Albers-et-al/Fragment1/bin/data/02.png) | ![iterations](./Week4-Anni-Albers-et-al/Fragment1/bin/data/iterations.gif) |
+
+Shape consists of 3 dominant lines: top, middle and bottom. Top and bottom lines are sampled with the same interval (linear), whereas the mid line is sampled in a skewed manner. I have tried couple of functions to recreate the same amount of skewness, and I found **cubic function** `powf(x,3)` to be the closest, but it is not the same.
+
+3 main lines are defined as `ofPolyline`, since it has a handy function to get a point at a percentage.
+
+3 points can be sampled from polyline as:
+
+```c++
+vector < ofPoint > ofApp::CreateArrow(ofPolyline top, ofPolyline mid, ofPolyline bottom, float percentage ){
+    vector < ofPoint > points;
+    points.push_back(top.getPointAtPercent(percentage));
+    points.push_back(mid.getPointAtPercent(powf(percentage, 3)));
+    points.push_back(bottom.getPointAtPercent(percentage));
+    return points;
+} 
+```
+
