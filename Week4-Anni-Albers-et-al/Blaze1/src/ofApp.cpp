@@ -1,5 +1,5 @@
 #include "ofApp.h"
-
+#include <iterator>
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetBackgroundColor(255);
@@ -16,14 +16,15 @@ void ofApp::setup(){
     sizes[3] = 171;
     sizes[4] = 241;
     sizes[5] = 311;
-    for (int i=0; i < 6; i++)
+    sizes[6] = 900;
+    for (int i=0; i < circleCount; i++)
     {
          circles[i].Set(x, y, sizes[i]);
     }
     
 }
 
-vector < ofPoint > ofApp::GenerateArrow(Circle a, Circle b, int sample, float thickness)
+vector < ofPoint > ofApp::GenerateArrow(Circle a, Circle b, float sample, float thickness)
 {
     vector < ofPoint > points;
     ofPoint p1 = a.GetPoint(sampleDegree * sample + thickness);
@@ -50,33 +51,34 @@ void ofApp::update(){
     float centerX = ofGetWidth()/2;
     float centerY = ofGetHeight()/2;
     
-    for (int i=0; i < 5; i++)
+    for (int i=0; i < circleCount-1; i++)
     {
         float offset = ofMap(easeOutBack(i/4), 0, 1, 20, 30);
-        
+
         float x = ofMap(ofNoise(i*0.1 + t), 0, 1, centerX-offset, centerX+offset);
         float y = ofMap(ofNoise(i*0.1 + t*2), 0, 1, centerY-offset, centerY+offset);
         float r = ofMap(ofNoise(i*0.1 + t), 0, 1, sizes[i] *0.5, sizes[i] *1.2);
-        
+
         circles[i].Set(x, y, r);
     }
-    
-    
+
+
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    
     int sampleCount = 360/sampleDegree  * -1;
     float t = ofGetElapsedTimef() * 0.5;
-
-    for (int i=0; i < 5; i++)
+    
+    for (int i=0; i < circleCount-1; i++)
     {
         for(int j =0; j< sampleCount; j++)
         {
-            vector < ofPoint > points1 =  GenerateArrow(circles[i], circles[i+1], j, 0);
-            vector < ofPoint > points2  = GenerateArrow(circles[i], circles[i+1], j, ofMap(ofNoise((i* j)*0.1+ t), 0, 1, 2,7));
-            
+            float offsetSample = ofMap(i, 0, circleCount-2, -1, 1) *t *0.1;
+            vector < ofPoint > points1 =  GenerateArrow(circles[i], circles[i+1], j+ offsetSample , 0);
+            vector < ofPoint > points2  = GenerateArrow(circles[i], circles[i+1], j+ offsetSample, 5);
+//             ofMap(ofNoise((i)+ t), 0, 1, 2,7)
             ofPath path;
             path.setFillColor(0);
             path.moveTo(points1[0]);

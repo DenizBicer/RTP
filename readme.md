@@ -201,9 +201,9 @@ Code details:
 
 ### Morisawa
 
-**Original Work**
-
-![morisawa2](./Week3-MurielCooper-JohnMaeda/morisawa/media/morisawa2.jpg)
+| Original Work                                                | **Reproduction**                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![morisawa2](./Week3-MurielCooper-JohnMaeda/morisawa/media/morisawa2.jpg) | ![devImg2020-06-10-19-07-13-086](./Week3-MurielCooper-JohnMaeda/morisawa/bin/data/images/devImgs/devImg2020-06-10-19-07-13-086.jpg) |
 
 
 
@@ -221,11 +221,7 @@ I found this command from [here](https://github.com/CocoaPods/CocoaPods/issues/7
 
 
 
-**Reproduction**
-
-![devImg2020-06-10-19-07-13-086](./Week3-MurielCooper-JohnMaeda/morisawa/bin/data/images/devImgs/devImg2020-06-10-19-07-13-086.jpg)
-
-Becuase of the difference at the font the reproduction looks darker.
+I suppose, becuase of the difference at the font the reproduction looks darker.
 
 ## Week4-Anni-Albers-et-al
 
