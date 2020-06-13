@@ -16,6 +16,7 @@ classmates web ring:
      * [Morisawa](#morisawa)
   * [Week4-Anni-Albers-et-al](#week4-anni-albers-et-al)
      * [Blaze 1 - Bridget Riley](#blaze-1---bridget-riley)
+     * [Fragments 1 -Bridget Riley](#fragments-1--bridget-riley)
 
 ## Week 1 - Vera Molnar 
 
