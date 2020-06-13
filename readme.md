@@ -1,12 +1,6 @@
 ## Table of Contents
 
  * [Week 1 - Vera Molnar](#week-1---vera-molnar)
-     * [Carrés en 2 positions](#carrés-en-2-positions)
-     * [Computer-rosace-series](#computer-rosace-series)
-     * [de la serie 100 carres](#de-la-serie-100-carres)
-     * [du cycle inclinaisions](#du-cycle-inclinaisions)
-     * [Horizontales](#horizontales)
-     * [Sainte-Victoire On Line](#sainte-victoire-on-line)
   * [Week 2 - John Whitney](#week-2---john-whitney)
      * [Harmony](#harmony)
      * [Lissajous-curve](#lissajous-curve)
