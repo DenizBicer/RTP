@@ -19,35 +19,13 @@
 
 ## Week 1 - Vera Molnar 
 
-### Carrés en 2 positions 
-
-![01](./Week1-Vera-Molnar/Carres-en-2-positions/media/01.gif)
-
-### Computer-rosace-series
-
-![01](./Week1-Vera-Molnar/Computer-rosace-series/media/01.png)
-
-### de la serie 100 carres
-
-![01](./Week1-Vera-Molnar/de-la-serie-100-carres/media/01.png)
+| Carrés en 2 positions                                        | Computer-rosace-series                                       | de la serie 100 carres                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![01](./Week1-Vera-Molnar/Carres-en-2-positions/media/01.gif) | ![01](./Week1-Vera-Molnar/Computer-rosace-series/media/01.png) | ![01](./Week1-Vera-Molnar/de-la-serie-100-carres/media/01.png) |
+| du cycle inclinaisions                                       | Horizontales                                                 | Sainte-Victoire On Line                                      |
+| ![01](./Week1-Vera-Molnar/du-cycle-inclinaisions/media/01.png) | ![01](./Week1-Vera-Molnar/Horizontales/media/01.gif)         | ![01](./Week1-Vera-Molnar/Sainte-Victoire-On-Line/media/01.gif) |
 
 
-
-### du cycle inclinaisions
-
-![01](./Week1-Vera-Molnar/du-cycle-inclinaisions/media/01.png)
-
-
-
-### Horizontales
-
-![01](./Week1-Vera-Molnar/Horizontales/media/01.gif)
-
-
-
-### Sainte-Victoire On Line
-
-![01](./Week1-Vera-Molnar/Sainte-Victoire-On-Line/media/01.gif)
 
 ## Week 2 - John Whitney
 
@@ -257,7 +235,7 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 | --------------------------------------------------------- | --------------------------------------------------------- |
 | ![e03](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e03.gif) | ![e04](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e04.gif) |
 
-| noise on sample degree                                    | noise on sample degree with a smaller range               | noise on sample count                                     |
+| noise on sample degree                                    | noise on sample degree with a smaller range               | fix sample count and change sample degree                 |
 | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
 | ![e05](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e05.gif) | ![e06](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e06.gif) | ![eo7](./Week4-Anni-Albers-et-al/Blaze1/bin/data/eo7.gif) |
 
