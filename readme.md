@@ -20,11 +20,11 @@ classmates web ring:
 
 ## Week 1 - Vera Molnar 
 
-| Carrés en 2 positions                                        | Computer-rosace-series                                       | de la serie 100 carres                                       |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![01](./Week1-Vera-Molnar/Carres-en-2-positions/media/01.gif) | ![01](./Week1-Vera-Molnar/Computer-rosace-series/media/01.png) | ![01](./Week1-Vera-Molnar/de-la-serie-100-carres/media/01.png) |
-| du cycle inclinaisions                                       | Horizontales                                                 | Sainte-Victoire On Line                                      |
-| ![01](./Week1-Vera-Molnar/du-cycle-inclinaisions/media/01.png) | ![01](./Week1-Vera-Molnar/Horizontales/media/01.gif)         | ![01](./Week1-Vera-Molnar/Sainte-Victoire-On-Line/media/01.gif) |
+| Carrés en 2 positions                         | Computer-rosace-series                 | de la serie 100 carres                 |
+| --------------------------------------------- | -------------------------------------- | -------------------------------------- |
+| ![01](https://i.imgur.com/kuaiLxf.gif)        | ![01](https://i.imgur.com/giTlWIK.png) | ![01](https://i.imgur.com/Hbm1mA5.png) |
+| du cycle inclinaisions                        | Horizontales                           | Sainte-Victoire On Line                |
+| ![01](![img](https://i.imgur.com/YW03m9L.png) | ![01](https://i.imgur.com/L55vmrw.mp4) | ![01](https://i.imgur.com/otKu2B9.gif) |
 
 
 
@@ -34,11 +34,11 @@ classmates web ring:
 
 
 
-![harmony original](./Week2-JohnWhitney/Harmony/media/harmony_original.png)
+![harmony original](https://i.imgur.com/lK0W2iF.png)
 
 | 01 -  Wrong map range                                                                          | 02 - Wrong variable in sin                                                  | 03 -  Worked!                                                                                      |
 | :--------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| ![01](./Week2-JohnWhitney/Harmony/media/01.gif)                                                | ![02](./Week2-JohnWhitney/Harmony/media/02.gif)                             | ![03](./Week2-JohnWhitney/Harmony/media/03.gif)                                                    |
+| ![01](https://i.imgur.com/45cEeYh.gif)                                                         | ![02](https://i.imgur.com/YZiDR5e.gif)                                      | ![03](https://i.imgur.com/b75lmMf.gif)                                                             |
 | ```float x = ofMap(sin(time*frequency )*amplitude, -amplitude, amplitude, 0, ofGetWidth());``` | ` float x = ofMap(sin(time * M_PI * 2 / period ), -1, 1, 0, ofGetWidth());` | `    float x = ofMap(sin(y * frequency * M_PI * 2 / period ) *amplitude, -1, 1, 0, ofGetWidth());` |
 | ` -amplitude, amplitude` range should have been `-1, 1`                                        | instead of `time` use `y` value.                                            |                                                                                                    |
 
@@ -46,9 +46,9 @@ classmates web ring:
 
 Recreating the below curve table:
 
-![curve-table](./Week2-JohnWhitney/Lissajous-curve/media/curve-table.gif)
+![curve-table](https://i.imgur.com/5MlrCjp.gif)
 
-Equation: ![equation](./Week2-JohnWhitney/Lissajous-curve/media/equation.png)
+Equation: ![equation](https://i.imgur.com/j2LBAZH.png)
 
 The table is changing two parameters **a** and **b**.
 
@@ -58,9 +58,9 @@ Columns are increasing the **b** value from left to right . Range is [1,7]
 
 
 
-| 01 - no grid                                            | 02 - wrong spacing at grid                              | 03 - worked!                                            |
-| ------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
-| ![01](./Week2-JohnWhitney/Lissajous-curve/media/01.gif) | ![02](./Week2-JohnWhitney/Lissajous-curve/media/02.gif) | ![03](./Week2-JohnWhitney/Lissajous-curve/media/03.gif) |
+| 01 - no grid                           | 02 - wrong spacing at grid             | 03 - worked!                           |
+| -------------------------------------- | -------------------------------------- | -------------------------------------- |
+| ![01](https://i.imgur.com/jnlFjGp.gif) | ![02](https://i.imgur.com/U9Yzjbs.gif) | ![03](https://i.imgur.com/OHlr0wr.gif) |
 
 **01 code snippet**
 
@@ -102,10 +102,10 @@ recreating snippets of [Matrix III - John whitney](https://www.youtube.com/watch
 
 
 
-| 01                                                 | 02                                                                                                                                                                | 03                                                                                                                  |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| ![01](./Week2-JohnWhitney/Matrix-III/media/01.gif) | ![02](./Week2-JohnWhitney/Matrix-III/media/02.gif)                                                                                                                | ![03](./Week2-JohnWhitney/Matrix-III/media/03.gif)                                                                  |
-|                                                    | removing the **i** from equation made them align too much. Also they should have collapsed in the middle but because of `+ M_PI * 0.5`  it collapsed on the side. | This version is closer to the original but they align to a lign before collapsing instead of coming from all sides. |
+| 01                                     | 02                                                                                                                                                                | 03                                                                                                                  |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| ![01](https://i.imgur.com/qCI8NOf.mp4) | ![02](https://i.imgur.com/fnwHMfY.mp4)                                                                                                                            | ![03](https://i.imgur.com/cSvZt37.mp4)                                                                              |
+|                                        | removing the **i** from equation made them align too much. Also they should have collapsed in the middle but because of `+ M_PI * 0.5`  it collapsed on the side. | This version is closer to the original but they align to a lign before collapsing instead of coming from all sides. |
 
 
 
@@ -136,7 +136,7 @@ recreating snippets of [Catalog](https://youtu.be/TbV7loKp69s?t=225)
 
 I studied the fan like shape using Figma. 
 
-| ![study1](./Week2-JohnWhitney/Catalog/media/study1.png)       | ![study2](./Week2-JohnWhitney/Catalog/media/study2.png)                       |
+| ![study1](https://i.imgur.com/uiH5n8Y.png)                    | ![study2](https://i.imgur.com/j9GK8dw.png)                                    |
 | ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | I first placed circles to create the shape as an intersection | Then found the origin points and the angles to recreate the arcs using ofPath |
 
@@ -153,7 +153,7 @@ I studied the fan like shape using Figma.
 
 above code snippet renders the following shape
 
-![shape](./Week2-JohnWhitney/Catalog/media/shape.png)
+![shape](https://i.imgur.com/kc56KON.png)
 
 Code details:
 
@@ -166,7 +166,7 @@ Code details:
 
 | 01                                                                                                                          | 02                                                               |
 | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![01](./Week2-JohnWhitney/Catalog/media/01.png)                                                                             | ![02](./Week2-JohnWhitney/Catalog/media/02.gif)                  |
+| ![img](https://i.imgur.com/XCJwepG.png)                                                                                     | ![02](https://i.imgur.com/vwZdk4B.mp4)                           |
 | The position of the arcs are correct but couldn't figure out the rotation yet. The pivot was not set properly for rotation. | The **mouseX** position is used to change the size of the shape. |
 
 **02**
@@ -180,9 +180,9 @@ Code details:
 
 ### Morisawa
 
-| Original Work                                                | **Reproduction**                                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![morisawa2](./Week3-MurielCooper-JohnMaeda/morisawa/media/morisawa2.jpg) | ![devImg2020-06-10-19-07-13-086](./Week3-MurielCooper-JohnMaeda/morisawa/bin/data/images/devImgs/devImg2020-06-10-19-07-13-086.jpg) |
+| Original Work                                 | **Reproduction**                                                  |
+| --------------------------------------------- | ----------------------------------------------------------------- |
+| ![morisawa2](https://i.imgur.com/8LXdGtL.jpg) | ![devImg2020-06-10-19-07-13-086](https://i.imgur.com/K6mjQuC.jpg) |
 
 
 
@@ -206,21 +206,21 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 ### Blaze 1 - Bridget Riley
 
-| Original                                                            | Recreation                                                                                                                |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| ![original](./Week4-Anni-Albers-et-al/Blaze1/bin/data/original.jpg) | ![Blaze1Debug_2020-06-12-22-06-24-703](./Week4-Anni-Albers-et-al/Blaze1/bin/data/Blaze1Debug_2020-06-12-22-06-24-703.png) |
+| Original                                     | Recreation                                                              |
+| -------------------------------------------- | ----------------------------------------------------------------------- |
+| ![original](https://i.imgur.com/NrLHIJf.jpg) | ![Blaze1Debug_2020-06-12-22-06-24-703](https://i.imgur.com/kwVDaaT.mp4) |
 
 
 
 **Shape Study**
 
-| Extracting the building blocks                          | seperating circles                                      | finding points to draw an arrow between circles         |
-| ------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
-| ![01](./Week4-Anni-Albers-et-al/Blaze1/bin/data/01.png) | ![02](./Week4-Anni-Albers-et-al/Blaze1/bin/data/02.png) | ![03](./Week4-Anni-Albers-et-al/Blaze1/bin/data/03.png) |
+| Extracting the building blocks         | seperating circles                     | finding points to draw an arrow between circles |
+| -------------------------------------- | -------------------------------------- | ----------------------------------------------- |
+| ![01](https://i.imgur.com/HGutHlN.png) | ![02](https://i.imgur.com/jeIlsZq.png) | ![03](https://i.imgur.com/otOzwDt.png)          |
 
-| Iterations                                                              | Noise on circles                                              |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------- |
-| ![iterations](./Week4-Anni-Albers-et-al/Blaze1/bin/data/iterations.gif) | ![noise](./Week4-Anni-Albers-et-al/Blaze1/bin/data/noise.gif) |
+| Iterations                                     | Noise on circles                          |
+| ---------------------------------------------- | ----------------------------------------- |
+| ![iterations](https://i.imgur.com/gsYV4O6.gif) | ![noise](https://i.imgur.com/kwVDaaT.mp4) |
 
 
 
@@ -228,31 +228,31 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 
 
-| Noise by sampled degree (thickness)                       | Noise by cicle (thickness)                                |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| ![e01](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e01.gif) | ![e02](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e02.gif) |
+| Noise by sampled degree (thickness)     | Noise by cicle (thickness)              |
+| --------------------------------------- | --------------------------------------- |
+| ![e01](https://i.imgur.com/YQnwjTc.mp4) | ![e02](https://i.imgur.com/2L8ku8Z.mp4) |
 
-|                                                           |                                                           |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| ![e03](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e03.gif) | ![e04](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e04.gif) |
+|                                         |                                         |
+| --------------------------------------- | --------------------------------------- |
+| ![e03](https://i.imgur.com/kMKo5F7.mp4) | ![e04](https://i.imgur.com/IgfpPOX.mp4) |
 
-| noise on sample degree                                    | noise on sample degree with a smaller range               | fix sample count and change sample degree                 |
-| --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
-| ![e05](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e05.gif) | ![e06](./Week4-Anni-Albers-et-al/Blaze1/bin/data/e06.gif) | ![eo7](./Week4-Anni-Albers-et-al/Blaze1/bin/data/eo7.gif) |
+| noise on sample degree                  | noise on sample degree with a smaller range | fix sample count and change sample degree |
+| --------------------------------------- | ------------------------------------------- | ----------------------------------------- |
+| ![e05](https://i.imgur.com/DOl9bDh.mp4) | ![e06](https://i.imgur.com/0YsGbYb.mp4)     | ![eo7](https://i.imgur.com/fmxWDB0.mp4)   |
 
 
 
 ### Fragments 1 -Bridget Riley
 
-| Original                                                     | Recreation                                                   |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![original](./Week4-Anni-Albers-et-al/Fragment1/bin/data/original.png) | ![Fragment1Debug_2020-06-13-20-08-45-096](./Week4-Anni-Albers-et-al/Fragment1/bin/data/Fragment1Debug_2020-06-13-20-08-45-096.png) |
+| Original                                     | Recreation                                                                 |
+| -------------------------------------------- | -------------------------------------------------------------------------- |
+| ![original](https://i.imgur.com/KmsyElb.png) | ![Fragment1Debug_2020-06-13-20-08-45-096](https://i.imgur.com/XgsdJxm.png) |
 
 **Shape Study**
 
-| Tracing dominating lines                                   | Breaking them down                                         | Iterations                                                   |
-| ---------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| ![01](./Week4-Anni-Albers-et-al/Fragment1/bin/data/01.png) | ![02](./Week4-Anni-Albers-et-al/Fragment1/bin/data/02.png) | ![iterations](./Week4-Anni-Albers-et-al/Fragment1/bin/data/iterations.gif) |
+| Tracing dominating lines               | Breaking them down                     | Iterations                                     |
+| -------------------------------------- | -------------------------------------- | ---------------------------------------------- |
+| ![01](https://i.imgur.com/ybIENoQ.png) | ![02](https://i.imgur.com/g9HRzNN.png) | ![iterations](https://i.imgur.com/w71F9jV.gif) |
 
 Shape consists of 3 dominant lines: top, middle and bottom. Top and bottom lines are sampled with the same interval (linear), whereas the mid line is sampled in a skewed manner. I have tried couple of functions to recreate the same amount of skewness, and I found **cubic function** `powf(x,3)` to be the closest, but it is not the same.
 
