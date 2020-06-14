@@ -166,7 +166,7 @@ Code details:
 
 | 01                                                                                                                          | 02                                                               |
 | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![img](https://i.imgur.com/XCJwepG.png)                                                                                     | ![02](https://i.imgur.com/vwZdk4B.gif)                           |
+| ![img](https://i.imgur.com/XCJwepG.png)                                                                                     | ![02](https://i.imgur.com/dJ4VlXX.gif)                           |
 | The position of the arcs are correct but couldn't figure out the rotation yet. The pivot was not set properly for rotation. | The **mouseX** position is used to change the size of the shape. |
 
 **02**
@@ -208,7 +208,7 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 | Original                                     | Recreation                                                              |
 | -------------------------------------------- | ----------------------------------------------------------------------- |
-| ![original](https://i.imgur.com/NrLHIJf.jpg) | ![Blaze1Debug_2020-06-12-22-06-24-703](https://i.imgur.com/kwVDaaT.gif) |
+| ![original](https://i.imgur.com/NrLHIJf.jpg) | ![Blaze1Debug_2020-06-12-22-06-24-703](https://i.imgur.com/gpp1uZT.gif) |
 
 
 
@@ -220,7 +220,7 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 | Iterations                                     | Noise on circles                          |
 | ---------------------------------------------- | ----------------------------------------- |
-| ![iterations](https://i.imgur.com/gsYV4O6.gif) | ![noise](https://i.imgur.com/kwVDaaT.gif) |
+| ![iterations](https://i.imgur.com/gsYV4O6.gif) | ![noise](https://i.imgur.com/gpp1uZT.gif) |
 
 
 
@@ -230,7 +230,7 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 | Noise by sampled degree (thickness)     | Noise by cicle (thickness)              |
 | --------------------------------------- | --------------------------------------- |
-| ![e01](https://i.imgur.com/YQnwjTc.gif) | ![e02](https://i.imgur.com/2L8ku8Z.gif) |
+| ![e01](https://i.imgur.com/YQnwjTc.gif) | ![e02](https://i.imgur.com/LIr308J.gif) |
 
 |                                         |                                         |
 | --------------------------------------- | --------------------------------------- |
