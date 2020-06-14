@@ -24,7 +24,7 @@ classmates web ring:
 | --------------------------------------------- | -------------------------------------- | -------------------------------------- |
 | ![01](https://i.imgur.com/kuaiLxf.gif)        | ![01](https://i.imgur.com/giTlWIK.png) | ![01](https://i.imgur.com/Hbm1mA5.png) |
 | du cycle inclinaisions                        | Horizontales                           | Sainte-Victoire On Line                |
-| ![01](![img](https://i.imgur.com/YW03m9L.png) | ![01](https://i.imgur.com/L55vmrw.mp4) | ![01](https://i.imgur.com/otKu2B9.gif) |
+| ![01](![img](https://i.imgur.com/YW03m9L.png) | ![01](https://i.imgur.com/L55vmrw.gif) | ![01](https://i.imgur.com/otKu2B9.gif) |
 
 
 
@@ -104,7 +104,7 @@ recreating snippets of [Matrix III - John whitney](https://www.youtube.com/watch
 
 | 01                                     | 02                                                                                                                                                                | 03                                                                                                                  |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| ![01](https://i.imgur.com/qCI8NOf.mp4) | ![02](https://i.imgur.com/fnwHMfY.mp4)                                                                                                                            | ![03](https://i.imgur.com/cSvZt37.mp4)                                                                              |
+| ![01](https://i.imgur.com/qCI8NOf.gif) | ![02](https://i.imgur.com/fnwHMfY.gif)                                                                                                                            | ![03](https://i.imgur.com/cSvZt37.gif)                                                                              |
 |                                        | removing the **i** from equation made them align too much. Also they should have collapsed in the middle but because of `+ M_PI * 0.5`  it collapsed on the side. | This version is closer to the original but they align to a lign before collapsing instead of coming from all sides. |
 
 
@@ -166,7 +166,7 @@ Code details:
 
 | 01                                                                                                                          | 02                                                               |
 | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![img](https://i.imgur.com/XCJwepG.png)                                                                                     | ![02](https://i.imgur.com/vwZdk4B.mp4)                           |
+| ![img](https://i.imgur.com/XCJwepG.png)                                                                                     | ![02](https://i.imgur.com/vwZdk4B.gif)                           |
 | The position of the arcs are correct but couldn't figure out the rotation yet. The pivot was not set properly for rotation. | The **mouseX** position is used to change the size of the shape. |
 
 **02**
@@ -208,7 +208,7 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 | Original                                     | Recreation                                                              |
 | -------------------------------------------- | ----------------------------------------------------------------------- |
-| ![original](https://i.imgur.com/NrLHIJf.jpg) | ![Blaze1Debug_2020-06-12-22-06-24-703](https://i.imgur.com/kwVDaaT.mp4) |
+| ![original](https://i.imgur.com/NrLHIJf.jpg) | ![Blaze1Debug_2020-06-12-22-06-24-703](https://i.imgur.com/kwVDaaT.gif) |
 
 
 
@@ -220,7 +220,7 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 | Iterations                                     | Noise on circles                          |
 | ---------------------------------------------- | ----------------------------------------- |
-| ![iterations](https://i.imgur.com/gsYV4O6.gif) | ![noise](https://i.imgur.com/kwVDaaT.mp4) |
+| ![iterations](https://i.imgur.com/gsYV4O6.gif) | ![noise](https://i.imgur.com/kwVDaaT.gif) |
 
 
 
@@ -230,15 +230,15 @@ I suppose, becuase of the difference at the font the reproduction looks darker.
 
 | Noise by sampled degree (thickness)     | Noise by cicle (thickness)              |
 | --------------------------------------- | --------------------------------------- |
-| ![e01](https://i.imgur.com/YQnwjTc.mp4) | ![e02](https://i.imgur.com/2L8ku8Z.mp4) |
+| ![e01](https://i.imgur.com/YQnwjTc.gif) | ![e02](https://i.imgur.com/2L8ku8Z.gif) |
 
 |                                         |                                         |
 | --------------------------------------- | --------------------------------------- |
-| ![e03](https://i.imgur.com/kMKo5F7.mp4) | ![e04](https://i.imgur.com/IgfpPOX.mp4) |
+| ![e03](https://i.imgur.com/kMKo5F7.gif) | ![e04](https://i.imgur.com/IgfpPOX.gif) |
 
 | noise on sample degree                  | noise on sample degree with a smaller range | fix sample count and change sample degree |
 | --------------------------------------- | ------------------------------------------- | ----------------------------------------- |
-| ![e05](https://i.imgur.com/DOl9bDh.mp4) | ![e06](https://i.imgur.com/0YsGbYb.mp4)     | ![eo7](https://i.imgur.com/fmxWDB0.mp4)   |
+| ![e05](https://i.imgur.com/DOl9bDh.gif) | ![e06](https://i.imgur.com/0YsGbYb.gif)     | ![eo7](https://i.imgur.com/fmxWDB0.gif)   |
 
 
 
