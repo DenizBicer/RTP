@@ -270,3 +270,16 @@ vector < ofPoint > ofApp::CreateArrow(ofPolyline top, ofPolyline mid, ofPolyline
 } 
 ```
 
+### Silkscreen prints -Bridget Riley
+
+| Original                                     | Attempts                                     |
+| -------------------------------------------- | -------------------------------------------- |
+| ![original](https://i.imgur.com/TLmtIYo.jpg) | ![attempts](https://i.imgur.com/dpEdQZ1.gif) |
+
+I tried to apply distortion to all the variables I can think of but could not find a way to distort the grid similarly.
+
+I created the grid using polar coordinates instead of the cartesian to shape it circularly.  It is written as a fragment shader and code can be found at: https://www.shadertoy.com/view/tlscWM
+
+Bonus distortion effect:
+
+![Bonus](https://i.imgur.com/33tGU44.gif)
