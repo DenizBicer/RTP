@@ -69,3 +69,5 @@ reading.md
 *.gif
 *.png
 *.jpg
+
+!input.png

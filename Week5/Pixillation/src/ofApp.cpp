@@ -3,12 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     appname = ofFilePath::getBaseName(ofFilePath::getCurrentExePath());
-    original.load("input.png");
-    imgPing.load("input.png");
-    imgPong.allocate(imgPing.getWidth(),
-                     imgPing.getHeight(),
-                     OF_IMAGE_GRAYSCALE);
-
+    
     gui.setup();
     dilateButton.addListener(this, &ofApp::dilateButtonClicked);
     eroseButton.addListener(this, &ofApp::eroseButtonClicked);
@@ -23,6 +18,61 @@ void ofApp::setup(){
     gui.add(addButton.setup("add"));
     gui.add(xorButton.setup("xor"));
     gui.add(flipButton.setup("flip"));
+    
+//    int width = ofGetWidth();
+//    int height = ofGetHeight();
+//
+//    fbo.allocate(width, height, GL_RGBA);
+//
+//    fbo.begin();
+//    ofSetRectMode(OF_RECTMODE_CENTER);
+//    ofSeedRandom(0);
+//    ofBackground(0);
+//    ofSetColor(255);
+//    ofNoFill();
+//    ofSetLineWidth(10);
+//    ofPoint points[10];
+//
+//    for(int i=0; i<10; i++)
+//    {
+//        int x = ofRandom(width*0.5) + width*0.25;
+//        int y = ofRandom(height*0.5) + height*0.25;
+//        points[i] = ofPoint(x,y);
+//        ofDrawRectangle(x,y,50,50);
+//
+////        for(int j=0; j<i; j++)
+////        {
+////            int d = points[i].distance(points[j]);
+////            if(d < 50)
+////                ofDrawLine(points[i], points[j]);
+////        }
+//    }
+//
+//    fbo.end();
+    
+    
+//    ofPixels pixels;
+//    fbo.readToPixels(pixels);
+//    original.setFromPixels(pixels);
+//    imgPing.setFromPixels(pixels);
+//    imgPong.setFromPixels(pixels);
+    
+    original.load("input2.png");
+    imgPing.load("input2.png");
+    imgPong.allocate(imgPing.getWidth(),
+                     imgPing.getHeight(),
+                     OF_IMAGE_GRAYSCALE);
+    
+    
+}
+void ofApp::update(){
+//    int t = ofGetElapsedTimef();
+////    if(t%4 == 0)
+//    {
+////        dilateButtonClicked();
+//        dilateButtonClicked();
+//        subtractButtonClicked();
+//    }
 }
 
 
@@ -30,6 +80,8 @@ void ofApp::setup(){
 void ofApp::draw(){
     imgPing.draw(0, 0);
     gui.draw();
+    
+    
 }
 
 void ofApp::keyReleased(int key){
@@ -43,6 +95,21 @@ void ofApp::keyReleased(int key){
         }
         case 'r': {
             imgPing = original;
+            break;
+        }
+        case 'a': {
+            int numRounds = 4;
+            bool useDilate = ofRandom(0, 1) < 0.8;
+            for (int i = 0; i < numRounds; ++i) {
+                if (useDilate) {
+                    dilateButtonClicked();
+                } else {
+                    eroseButtonClicked();
+                    useDilate = true;
+                }
+            }
+            
+            subtractButtonClicked();
             break;
         }
     }
@@ -141,14 +208,14 @@ void ofApp::erose( ofImage & imgSrc, ofImage & imgDest){
 }
 void ofApp::subtract( ofImage & imgLHS, ofImage & imgRHS){
     for (int i = 0; i < imgLHS.getWidth(); i++){
-         for (int j = 0; j < imgLHS.getHeight(); j++){
-             ofColor lhs = imgLHS.getColor(i, j);
-             ofColor rhs = imgRHS.getColor(i, j);
+        for (int j = 0; j < imgLHS.getHeight(); j++){
+            ofColor lhs = imgLHS.getColor(i, j);
+            ofColor rhs = imgRHS.getColor(i, j);
             
-             imgLHS.setColor(i, j, lhs - rhs);
-         }
+            imgRHS.setColor(i, j, lhs - rhs);
+        }
     }
-    imgLHS.update();
+    imgRHS.update();
 }
 void ofApp::XOR(ofImage & imgLHS, ofImage & imgRHS){
     for (int i = 0; i < imgLHS.getWidth(); i++){
@@ -164,66 +231,80 @@ void ofApp::XOR(ofImage & imgLHS, ofImage & imgRHS){
                 color = ofColor(255);
             else
                 color = ofColor(0);
-
             
-            imgLHS.setColor(i, j, color);
+            
+            imgRHS.setColor(i, j, color);
         }
     }
-    imgLHS.update();
+    imgRHS.update();
 }
 void ofApp::add( ofImage & imgLHS, ofImage & imgRHS){
     for (int i = 0; i < imgLHS.getWidth(); i++){
-         for (int j = 0; j < imgLHS.getHeight(); j++){
-             ofColor lhs = imgLHS.getColor(i, j);
-             ofColor rhs = imgRHS.getColor(i, j);
+        for (int j = 0; j < imgLHS.getHeight(); j++){
+            ofColor lhs = imgLHS.getColor(i, j);
+            ofColor rhs = imgRHS.getColor(i, j);
             
-             imgLHS.setColor(i, j, lhs + rhs);
-         }
+            imgRHS.setColor(i, j, lhs + rhs);
+        }
     }
-    imgLHS.update();
+    imgRHS.update();
 }
 
 void ofApp::flip(){
     for (int i = 0; i < imgPing.getWidth(); i++){
-            for (int j = 0; j < imgPing.getHeight(); j++){
-                ofColor c = imgPing.getColor(i, j);
-              
-                ofColor color;
-                if(c.getBrightness() < 127)
-                    color = ofColor(255);
-                else
-                    color = ofColor(0);
-                imgPing.setColor(i, j, color);
-            }
-       }
-    imgPing.update();
+        for (int j = 0; j < imgPing.getHeight(); j++){
+            ofColor c = imgPing.getColor(i, j);
+            
+            ofColor color;
+            if(c.getBrightness() < 127)
+                color = ofColor(255);
+            else
+                color = ofColor(0);
+            imgPong.setColor(i, j, color);
+        }
+    }
+    imgPong.update();
+}
+
+void ofApp::swap(){
+    ofImage temp = imgPing;
+    imgPing = imgPong;
+    imgPong = temp;
 }
 
 void ofApp::dilateButtonClicked(){
     dilate(imgPing, imgPong);
-    ofImage temp = imgPing;
-    imgPing = imgPong;
-    imgPong = temp;
+    swap();
     
 }
 void ofApp::eroseButtonClicked(){
     erose(imgPing, imgPong);
-    ofImage temp = imgPing;
-    imgPing = imgPong;
-    imgPong = temp;
+     swap();
 }
 void ofApp::subtractButtonClicked(){
-    subtract(imgPing, original);
+    subtract(imgPing, imgPong);
+    swap();
 }
 
 void ofApp::xorButtonClicked(){
-    XOR(imgPing, original);
+    XOR(imgPing, imgPong);
+     swap();
 }
 void ofApp::addButtonClicked(){
-    add(imgPing, original);
+    add(imgPing, imgPong);
+     swap();
 }
 
 void ofApp::flipButtonClicked(){
     flip();
+     swap();
 }
+
+void ofApp::applyBlur(){
+    subtract(original, imgPong);
+    swap();
+
+}
+
+
 

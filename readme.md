@@ -1,22 +1,26 @@
+
+
 Course details [link](https://sfpc.io/recreatingthepast-spring2020/)
 
 classmates web ring:
 
 * [Norm](https://www.are.na/norman-o-hagan/recreating-the-past-shenanigans-summer-2020)
 
-## Table of Contents
-
- * [Week 1 - Vera Molnar](#week-1---vera-molnar)
-  * [Week 2 - John Whitney](#week-2---john-whitney)
-     * [Harmony](#harmony)
-     * [Lissajous-curve](#lissajous-curve)
-     * [Matrix III](#matrix-iii)
-     * [Catalog](#catalog)
-  * [Week 3](#week-3)
-     * [Morisawa](#morisawa)
-  * [Week4-Anni-Albers-et-al](#week4-anni-albers-et-al)
-     * [Blaze 1 - Bridget Riley](#blaze-1---bridget-riley)
-     * [Fragments 1 -Bridget Riley](#fragments-1--bridget-riley)
+**Table of Contents**
+- [Week 1 - Vera Molnar](#week-1---vera-molnar)
+- [Week 2 - John Whitney](#week-2---john-whitney)
+  - [Harmony](#harmony)
+  - [Lissajous-curve](#lissajous-curve)
+  - [Matrix III](#matrix-iii)
+  - [Catalog](#catalog)
+- [Week 3](#week-3)
+  - [Morisawa](#morisawa)
+- [Week4-Anni-Albers-et-al](#week4-anni-albers-et-al)
+  - [Blaze 1 - Bridget Riley](#blaze-1---bridget-riley)
+  - [Fragments 1 -Bridget Riley](#fragments-1--bridget-riley)
+  - [Silkscreen prints -Bridget Riley](#silkscreen-prints--bridget-riley)
+- [Week5](#week5)
+  - [Pixillation by Lillian Schwartz](#pixillation-by-lillian-schwartz)
 
 ## Week 1 - Vera Molnar 
 
@@ -283,3 +287,36 @@ I created the grid using polar coordinates instead of the cartesian to shape it 
 Bonus distortion effect:
 
 ![Bonus](https://i.imgur.com/33tGU44.gif)
+
+## Week5
+
+### Pixillation by Lillian Schwartz
+
+Original: Pixellation by Lilian Schwartz: https://vimeo.com/56480534
+
+I took some screen shots to be able to analyze the parts I would like to recreate: 
+
+|                                            |                                            |
+| ------------------------------------------ | ------------------------------------------ |
+| ![Frame1](https://i.imgur.com/qn5wrJg.png) | ![Frame2](https://i.imgur.com/8rnjkXp.png) |
+
+And then created two different seed images. I wasn’t sure if the squares should be filled or not. In the end they didn’t make a much of a difference.
+
+|                                            |                                            |
+| ------------------------------------------ | ------------------------------------------ |
+| ![Input1](https://i.imgur.com/iPlgKXp.png) | ![Input2](https://i.imgur.com/zijSHqj.png) |
+
+| Iterations                                     | Operators                                     |
+| ---------------------------------------------- | --------------------------------------------- |
+| ![Iterations](https://i.imgur.com/RtsQZnW.gif) | ![Operators](https://i.imgur.com/RQsX0D5.gif) |
+
+I have iterated over different combinations of dilate, subtract and erode operators. One mistake I was making was subtracting always the initial image, that has resulted into similar looking squares all the time. When I changed operators to always apply from the previous image, I got interesting effects.
+
+It was difficult to visualize the effect of the operators properly. That’s why I have created a small gui to see how each operator changes the visuals and what could be a good sequence of operators to create a similar looking imagery  to Lilian Schwartz work. However, I couldn’t get the diagonal connections that appears in the original work. 
+
+I found it looked good when 2x dilate and 1x subtract operation are applied to an image each frame. These are the images that I got from this sequence:
+
+|                                             |                                           |
+| ------------------------------------------- | ----------------------------------------- |
+| ![Squares](https://i.imgur.com/pGRyPZi.gif) | ![human](https://i.imgur.com/yrMtId4.gif) |
+

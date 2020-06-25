@@ -7,6 +7,7 @@ class ofApp : public ofBaseApp{
     
 public:
     void setup();
+    void update();
     void draw();
     void keyReleased(int key);
     
@@ -16,6 +17,8 @@ public:
     void add( ofImage & imgLHS, ofImage & imgRHS);
     void XOR( ofImage & imgLHS, ofImage & imgRHS);
     void flip();
+    void swap();
+    void applyBlur();
     
     void dilateButtonClicked();
     void eroseButtonClicked();
@@ -24,7 +27,7 @@ public:
     void xorButtonClicked();
     void flipButtonClicked();
 
-    
+    ofFbo fbo;
     
     ofImage original;
     ofImage imgPing;
