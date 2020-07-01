@@ -5,6 +5,7 @@ Course details [link](https://sfpc.io/recreatingthepast-spring2020/)
 classmates web ring:
 
 * [Norm](https://www.are.na/norman-o-hagan/recreating-the-past-shenanigans-summer-2020)
+* [Lynn](https://github.com/lynnhu/RecreatingThePast_SFPC)
 
 **Table of Contents**
 - [Week 1 - Vera Molnar](#week-1---vera-molnar)
