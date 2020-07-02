@@ -7,6 +7,8 @@ classmates web ring:
 * [Norm](https://www.are.na/norman-o-hagan/recreating-the-past-shenanigans-summer-2020)
 * [Lynn](https://github.com/lynnhu/RecreatingThePast_SFPC)
 * [Lisa](https://github.com/lisajamhoury/sfpc_rtp_hw)
+* [Todd](https://github.com/synesthete/rtp_sfpc_2020_summer)
+* [Edgardo](https://github.com/eaviles/sfpc-2020-rtp)
 
 **Table of Contents**
 - [Week 1 - Vera Molnar](#week-1---vera-molnar)
